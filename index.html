@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        body {
+            text-align: center;
+            color: white;
+            background-color: aqua;
+            background-image: url(https://wallpapercave.com/wp/wp3684404.gif);
+            margin: 0;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            background-size: cover;
+            font-family: 'Roboto', sans-serif;
+        }
+        #Btn1 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 20px;
+            padding: 8px 15px;
+            background-color: #21abcd;
+            font-weight: 700;
+            transition: ease 300ms;
+            color: white;
+            border: solid white;
+        }
+        button:hover {
+            transform: scale(1.2) rotate(10deg);
+            color: white;
+        }
+        button:active {
+            transform: scale(0.9);
+        }
+        #Btn2 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 20px;
+            padding: 8px 15px;
+            background-color: #21abcd;
+            font-weight: 700;
+            transition: ease 300ms;
+            color: white;
+            border: solid white;
+        }
+        button:hover {
+            transform: scale(1.2) rotate(10deg);
+            color: white;
+        }
+        button:active {
+            transform: scale(0.9);
+        }
+        #Btn3 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 20px;
+            padding: 8px 15px;
+            background-color: #21abcd;
+            font-weight: 700;
+            transition: ease 300ms;
+            color: white;
+            border: solid white;
+        }
+        button:hover {
+            transform: scale(1.2) rotate(10deg);
+            color: white;
+        }
+        button:active {
+            transform: scale(0.9);
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript addEventListener() Hands-On</h1>
+    <h2>Click on the  buttons below to see  different actions:</h2>
+
+    <button id="Btn1">Button 1</button>
+    <button id="Btn2">Button 2</button>
+    <button id="Btn3">Button 3</button>
+
+    <script>
+        let btn1 = document.getElementById('Btn1');
+        let btn2 = document.getElementById('Btn2');
+        let btn3 = document.getElementById('Btn3');
+
+        btn1.addEventListener('click', btn1Function);
+        btn2.addEventListener('click', btn2Function);
+        btn3.addEventListener('click', btn3Function);
+
+        function btn1Function(){
+            window.alert("Button 1 was clicked!");
+        }
+        function btn2Function(){
+            window.alert("Button 2 was clicked!");
+        }
+        function btn3Function(){
+            window.alert("Button 3 was clicked!");
+        }
+    </script>
+</body>
+</html>
